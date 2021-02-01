@@ -1,3 +1,6 @@
+"""
+https://my.oschina.net/zhangxufeng/blog/3055328
+"""
 class Factory:
 
     @staticmethod

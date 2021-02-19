@@ -18,7 +18,7 @@ Doing many small writes can hurt performance. Each write is ultimately a syscall
 
 Streaming data directly from a reader is easy. Method Read is designed to be called within a loop where, with each iteration, it reads a chunk of data from the source and places it into buffer p. This loop will continue until the method returns an io.EOF error.
 
-> When a Read() exhausts available data, a reader may return a non-zero n and err=io.EOF. However, depending on implementation, a reader may choose to return a non-zero n and err = nil at the end of stream. In that case, any subsequent reads must return n=0, err=io.EOF
-> Lastly, a call to Read() that returns n=0 and err=nil does not mean EOF as the next call to Read() may return more data
+> - When a Read() exhausts available data, a reader may return a non-zero n and err=io.EOF. However, depending on implementation, a reader may choose to return a non-zero n and err = nil at the end of stream. In that case, any subsequent reads must return n=0, err=io.EOF
+> - Lastly, a call to Read() that returns n=0 and err=nil does not mean EOF as the next call to Read() may return more data
 
 ### io.Writer: Represents an entity to which you can write a stream of bytes (I'm a target you can write sth to)

@@ -4,7 +4,7 @@
 
 ## Classification of patterns
 
-## References
+## Good Stuff
 
 https://refactoring.guru/design-patterns
 
@@ -50,3 +50,7 @@ Streaming data directly from a reader is easy. Method Read is designed to be cal
 ## Sequential Supervised Learning
 
 > [Hidden Markov Model and Naive Bayes relationship](http://www.davidsbatista.net/blog/2017/11/11/HHM_and_Naive_Bayes/)
+
+## Fisher-Yates shuffle algorithm
+
+> [Randomness is hard](https://medium.com/@oldwestaction/randomness-is-hard-e085decbcbb2

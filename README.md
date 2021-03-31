@@ -62,3 +62,7 @@ References:
 ## 8. KMP
 
 > [KMP Algorithm (String Matching)](https://binary-baba.medium.com/string-matching-kmp-algorithm-27c182efa387)
+
+## 9. Understanding Tensorflow
+
+> [Understanding Tensorflow](https://jacobbuckman.com/2018-06-25-tensorflow-the-confusing-parts-1/#understanding-tensorflow)

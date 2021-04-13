@@ -66,3 +66,11 @@ References:
 ## 9. Understanding Tensorflow
 
 > [Understanding Tensorflow](https://jacobbuckman.com/2018-06-25-tensorflow-the-confusing-parts-1/#understanding-tensorflow)
+
+## 10. Graph
+
+> [From Theory To Practice: Representing Graphs](https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38)
+
+> [Finding The Shortest Path, With A Little Help From Dijkstra](https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e)
+
+> [A Gentle Introduction To Graph Theory](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)

@@ -69,12 +69,35 @@ References:
 
 ## 10. Graph
 
+> [A Gentle Introduction To Graph Theory](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
+
 > [From Theory To Practice: Representing Graphs](https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38)
 
-> [Finding The Shortest Path, With A Little Help From Dijkstra](https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e)
+> [Spinning Around In Cycles With Directed Acyclic Graphs](https://medium.com/basecs/spinning-around-in-cycles-with-directed-acyclic-graphs-a233496d4688)
 
-> [A Gentle Introduction To Graph Theory](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
+> [Finding The Shortest Path, With A Little Help From Dijkstra](https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e)
 
 ## 11.Encode
 
 > [What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text](https://kunststube.net/encoding/)
+
+## 12.Go routines
+
+In Golang, unlike normal functions, the control does not wait for the Goroutine to finish executing. The Control immediately returns to the next line of the code after a Goroutine call. The main Goroutine (main function is also a Goroutine) should be running for any other Goroutines to run. If the main Goroutine terminates, the program will be terminated and no other Goroutine will run.
+
+The switch between Goroutines happen only at well defined points — when an explicit call is made to the Goruntime scheduler. And those well defined points are:
+
+- Channels send and receive operations, if those operations would block.
+- The Go statement, although there is no guarantee that the new Goroutine will be scheduled immediately.
+- Blocking syscalls like file and network operations.
+- After being stopped for a garbage collection cycle.
+
+Go uses three entities to explain the Goroutine scheduling:
+
+- Processor (P)
+- OSThread (M)
+- Goroutines (G)
+
+the number of threads available for Goroutines to run is equal to the GOMAXPROCS, which by default is equal to the number of cores available for that application
+
+> [A complete journey with Goroutines](https://riteeksrivastava.medium.com/a-complete-journey-with-goroutines-8472630c7f5c)

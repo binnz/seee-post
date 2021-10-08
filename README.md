@@ -98,6 +98,10 @@ Go uses three entities to explain the Goroutine scheduling:
 - OSThread (M)
 - Goroutines (G)
 
-the number of threads available for Goroutines to run is equal to the GOMAXPROCS, which by default is equal to the number of cores available for that application
+the number of Processor available for Goroutines to run is equal to the GOMAXPROCS, which by default is equal to the number of cores available for that application. The runtime system will create N Processor at the start of the program and stored in an array.
+
+The setmaxthreads function in runtime / debug sets the maximum number of M. If an M is blocked, a new m will be created.
+
+Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once.
 
 > [A complete journey with Goroutines](https://riteeksrivastava.medium.com/a-complete-journey-with-goroutines-8472630c7f5c)
